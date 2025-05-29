@@ -2,6 +2,7 @@
   "name": "dapp-buy-me-a-coffee",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://eitt-01.github.io/xnode-protocol-pause/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html",
