@@ -3,5 +3,8 @@
     "resolvers": [
         "...",
         "parcel-resolver-tspaths"
-    ]
+    ],
+    "optimizers": {
+        "*.js": ["@parcel/optimizer-terser"]
+    }
 }
