@@ -47,7 +47,7 @@ export default function ContractPaused({ address }: { address: string }) {
     if (isLoading) {
         return (
             <p>
-                Status: <span className="mt-1 px-2 py-1 text-xs rounded bg-gray-100 text-gray-600 w-fit">加载中...</span>
+                Status: <span className="mt-1 px-2 py-1 text-xs rounded bg-gray-100 text-gray-600 w-fit">Loading...</span>
             </p>
         );
     }
@@ -55,7 +55,7 @@ export default function ContractPaused({ address }: { address: string }) {
     if (error) {
         return (
             <p>
-                Status: <span className="mt-1 px-2 py-1 text-xs rounded bg-red-100 text-red-800 w-fit">获取失败</span>
+                Status: <span className="mt-1 px-2 py-1 text-xs rounded bg-red-100 text-red-800 w-fit">Failure</span>
             </p>
         );
     }
@@ -67,7 +67,7 @@ export default function ContractPaused({ address }: { address: string }) {
                     ? 'bg-red-100 text-red-800' 
                     : 'bg-green-100 text-green-800'
             }`}>
-                {isPaused ? '已暂停' : '正常'}
+                {isPaused ? 'Paused' : 'Running'}
             </span>
         </p>
     );
